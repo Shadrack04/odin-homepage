@@ -87,6 +87,9 @@ main {
   box-shadow: 5px 2px 5px 2px rgba(194, 213, 255, 0.6196078431372549);
   margin-top: 15px;
   cursor: pointer;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1s ease-in;
   transition: transform 0.5s ease-in-out;
   &:hover {
     transform: scale(1.05);
@@ -121,6 +124,11 @@ main {
       color: rgba(0, 0, 0, 0.685);
     }
   }
+}
+
+.card.slide-animation {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 footer {
